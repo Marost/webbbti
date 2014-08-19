@@ -8,7 +8,6 @@
 /* Import Section
 ====================================================================== */
 @import url("base.css");				/* Default Reset, Typography, Forms, etc. */
-@import url("responsive.css");			/* 960 Grid + Media Query Layouts */
 @import url("icons.css");				/* Font Awesome Icons / Glyphicons Halflings */
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700");
 
@@ -3424,15 +3423,6 @@ table.standard-table.shop td {
 }
 
 
-/* Shop Media Queries */
-@media only screen and (max-width: 767px) { .container .four-shop.columns { width: 260px; } }
-@media only screen and (min-width: 480px) and (max-width: 767px) { .container .four-shop.columns { width: 360px; } }
-@media only screen and (min-width: 768px) and (max-width: 959px) { .container .four-shop.columns { width: 140px; } }
-@media only screen and (max-width: 767px) { .shop-page.page-content { margin: 0; } }
-@media only screen and (min-width: 768px) and (max-width: 959px) { #cart .button.color { margin: 5px 0 0 0; } }
-
-
-
 /* =================================================================== */
 /* Media Queries
 ====================================================================== */
@@ -3444,385 +3434,6 @@ table.standard-table.shop td {
 
 	/* You need at least a height, adjust this to your needs */
 	.jcarousel { height: 317px; }
-
-}
-
-
-/* Tablet Portrait size to standard 960 (devices and browsers)
-====================================================================== */
-@media only screen and (min-width: 768px) and (max-width: 959px) {
-
-	#wrapper,
-	#footer,
-	#footer-bottom {
-		width: 714px;
-	}
-
-	#navigation {
-		width: 734px;
-	}
-
-	.style-2 {
-		width: 714px !important;
-	}
-
-	.contact-details-alt li p strong {
-		margin: 0 5px 0 0;
-	}
-
-
-	.line {
-		margin: 0 0 0 -28px;
-		padding: 0 56px 0 0;
-	}
-
-	.widget-search input {
-		width: 134px;
-	}
-
-	.cut {
-		display: none;
-	}
-
-	.sidebar {
-		padding: 28px 0;
-	}
-
-	.post {
-		margin: 24px 0;
-	}
-
-	ol li ol.childlist .comment-des {
-		float:right;
-		width:70%;
-	}
-	.comment-des {
-		float:right;
-		width: 73%;
-	}
-
-	#contact textarea {
-		max-width: 425px;
-		min-width: 425px;
-	}
-
-	.medium-image {
-		margin: 0 25px 0 0;
-		width: 35%;
-	}
-
-	.medium-content {
-		width: 46%;
-	}
-
-	.post.medium {
-		margin: 30px 0;
-	}
-
-	#not-found h2 {
-		font-size: 160px;
-		line-height: 160px;
-	}
-
-	#not-found i {
-		font-size: 155px;
-	}
-
-	#not-found p {
-		font-size: 22px;
-		line-height: 32px;
-	}
-
-	.client-list img {
-		width: 130px;
-		height: auto;
-	}
-
-}
-
-
-/* All Mobile Sizes (devices and browsers)
-====================================================================== */
-@media only screen and (max-width: 767px) {
-
-	#sub-menu {
-		float: left;
-		margin: 5px 0 0 0;
-	}
-
-	#tagline,
-	.social-icons,
-	.contact-details,
-	.top-search,
-	.slide-caption,
-	.js #responsive,
-	.left-corner,
-	.right-corner {
-		display: none;
-	}
-
-	.portfolio-item,
-	.recent-blog {
-		margin: 0 0 40px 0;
-	}
-
-	.js .selectnav {
-		display: block;
-	}
-
-	#navigation {
-		margin:0;
-		width: 100%;
-		height: auto;
-		background: transparent;
-	}
-
-	.selectnav {
-		cursor: pointer;
-		padding: 10px;
-		margin: 0 0 30px 30px;
-		float: left;
-		font-size: 14px;
-	}
-
-	#header {
-		min-height: 115px;
-	}
-
-	#footer h4 {
-		margin-top: 20px;
-	}
-
-	#footer {
-		padding-top: 20px;
-	}
-
-	.page-title {
-		padding-bottom: 30px !important;
-	}
-
-	#breadcrumbs ul {
-		float: left;
-		padding: 0;
-		margin-top: 5px;
-		width: 100%;
-	}
-
-	.icon-box-container {
-		margin: 30px 0 20px 0;
-	}
-
-	.icon-box {
-		margin-bottom: 20px;
-	}
-
-	.page-title h2 {
-		padding: 0;
-		position: relative;
-	}
-	
-	.post {
-		margin: 24px 0;
-	}
-
-	.meta span {
-		display: none;
-	}
-
-	.line {
-		margin: 0 0 0 -30px;
-		padding: 0 60px 0 0;
-	}
-
-	.floated.sidebar.left,
-	.floated.sidebar.right {
-		-webkit-box-shadow:  none;
-		box-shadow:  none;
-		padding-bottom: 0;
-		margin: 0;
-		border: none;
-	}
-
-    .floated.sidebar.left {
-		border-bottom: 1px solid #e0e0e0;
-	}
-
-    .floated.sidebar.right {
-		border-top: 1px solid #e0e0e0;
-	}
-
-	#portfolio-navi {
-		float: left;
-		margin-left: 0;
-	}
-
-	#not-found h2 {
-		font-size: 110px;
-		line-height: 120px;
-	}
-
-	#not-found i {
-		font-size: 105px;
-	}
-
-	#not-found p {
-		font-size: 22px;
-		line-height: 32px;
-	}
-
-	body .container .columns.carousel-intro {
-		float:none !important;
-	}
-
-	.comment-by {
-		margin-bottom: 20px;
-	}
-
-	.caption-gray,
-	.caption-color,
-	.caption-transparent {
-		display: none !important;
-	}
-
-	.post.medium {
-		margin: 40px 0;
-	}
-
-	#logo-footer {
-		margin: 20px 0;
-	}
-
-	.pricing-table {
-		margin-bottom: 20px;
-	}
-
-	.pricing-table.featured {
-		margin-top: 12px;
-	}
-}
-
-
-/* Mobile Landscape Size to Tablet Portrait (devices and browsers)
-====================================================================== */
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-
-	#wrapper,
-	#footer,
-	#footer-bottom {
-		width: 420px;
-	}
-
-	.selectnav {
-		width: 355px;
-	}
-
-	.container.floated {
-		width: 420px;
-		padding: 0;
-	}
-
-	.blank.floated {
-		width: 360px;
-		padding: 0 30px;
-	}
-
-	.flickr-widget a {
-		width: 73px;
-		height: 73px;
-		margin-right: 9px;
-		margin-bottom: 9px;
-	}
-
-	ol li ol.childlist .comment-des {
-		float:right;
-		width:61%;
-	}
-
-	.comment-des {
-		float:right;
-		width: 67%;
-	}
-
-	#contact textarea {
-		max-width: 340px;
-		min-width: 340px;
-	}
-
-	.medium-image {
-		margin: 0 25px 0 0;
-		width: 30%;
-	}
-
-	.medium-content {
-		width: 46%;
-	}
-
-	.client-list img {
-		width: 179px;
-		height: auto;
-	}
-
-}
-
-
-/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers)
-====================================================================== */
-@media only screen and (max-width: 479px) {
-	#wrapper,
-	#footer,
-	#footer-bottom {
-		width: 320px;
-	}
-
-	.selectnav {
-		width: 255px;
-	}
-
-	.container.floated {
-		width: 320px;
-		padding: 0;
-	}
-
-	.blank.floated {
-		width: 260px;
-		padding: 0 30px;
-	}
-
-	.flickr-widget a {
-		width: 69px;
-		height: 69px;
-		margin-right: 9px;
-		margin-bottom: 9px;
-	}
-
-	ol li ol.childlist .comment-des {
-		float:right;
-		width:47%;
-	}
-
-	.comment-des {
-		float:right;
-		width: 54%;
-	}
-
-	#contact textarea {
-		max-width: 240px;
-		min-width: 240px;
-	}
-
-	.medium-image {
-		margin: 0 25px 0 0;
-		width: 100%;
-	}
-
-	.medium-content {
-		width: 80%;
-	}
-
-	.client-list img {
-		width: 260px;
-		height: auto;
-	}
 
 }
 
@@ -3876,4 +3487,145 @@ table.standard-table.shop td {
 	.yahoo {background: url(../images/social/yahoo@2x.png) no-repeat 50%; background-size: 50%; }
 	.youtube {background: url(../images/social/youtube@2x.png) no-repeat 50%; background-size: 50%; }
 
+}
+
+
+/* #Base 960 Grid
+================================================== */
+
+.container                                  { position: relative; width: 960px; margin: 0 auto; padding: 0; }
+.container.floated                          { width: 1020px; }
+.container .column,
+.container .columns                         { float: left; display: inline; margin-left: 10px; margin-right: 10px; }
+.row                                        { margin-bottom: 20px; }
+
+/* Nested Column Classes */
+#content { overflow: hidden; }
+.column.alpha, .columns.alpha               { margin-left: 0; }
+.column.omega, .columns.omega               { margin-right: 0; }
+.container .floated                         { float: left; display: inline; margin: 0; padding: 0 40px; }
+.blank.floated                              { float: left; display: inline; margin: 0; width: 960px; padding: 0 30px; border-top: 1px solid #e8e8e8; border-bottom: 1px solid #e8e8e8; background: #fcfcfc; -webkit-box-shadow: inset 0px 2px 0px 0px #f7f7f7, inset 0px -2px 0px 0px #f7f7f7; box-shadow: inset 0px 2px 0px 0px #f7f7f7, inset 0px -2px 0px 0px #f7f7f7;}
+
+
+/* Equal Sidebar */
+.floated.sidebar { position: absolute; top: 0; bottom: 0; }
+.floated.sidebar.right { float: right; right: 0; left: auto; }
+.floated.sidebar.left { float: left; left: 0; right: auto; }
+.floated.right { float: right; }
+
+
+/* Base Grid */
+.container .one.column,
+.container .one.columns,
+.container .one.floated                     { width: 40px;  }
+
+.container .two.columns,
+.container .two.floated                     { width: 100px; }
+
+.container .three.columns,
+.container .three.floated                   { width: 160px; }
+
+.container .four.columns,
+.container .four.floated                    { width: 220px; }
+
+.container .five.columns,
+.container .five.floated                    { width: 280px; }
+
+.container .six.columns,
+.container .six.floated                     { width: 340px; }
+
+.container .seven.columns,
+.container .seven.floated                   { width: 400px; }
+
+.container .eight.columns,
+.container .eight.floated                   { width: 460px; }
+
+.container .nine.columns,
+.container .nine.floated                    { width: 520px; }
+
+.container .ten.columns,
+.container .ten.floated                     { width: 580px; }
+
+.container .eleven.columns,
+.container .eleven.floated                  { width: 640px; }
+
+.container .twelve.columns,
+.container .twelve.floated                  { width: 700px; }
+
+.container .thirteen.columns,
+.container .thirteen.floated                { width: 760px; }
+
+.container .fourteen.columns,
+.container .fourteen.floated                { width: 820px; }
+
+.container .fifteen.columns,
+.container .fifteen.floated                 { width: 880px; }
+
+.container .sixteen.columns,
+.container .sixteen.floated                 { width: 940px; }
+
+
+.container .one-third.column                { width: 300px; }
+.container .two-thirds.column               { width: 620px; }
+
+
+/* Offsets */
+.container .offset-by-one                   { padding-left: 60px;  }
+.container .offset-by-two                   { padding-left: 120px; }
+.container .offset-by-three                 { padding-left: 180px; }
+.container .offset-by-four                  { padding-left: 240px; }
+.container .offset-by-five                  { padding-left: 300px; }
+.container .offset-by-six                   { padding-left: 360px; }
+.container .offset-by-seven                 { padding-left: 420px; }
+.container .offset-by-eight                 { padding-left: 480px; }
+.container .offset-by-nine                  { padding-left: 540px; }
+.container .offset-by-ten                   { padding-left: 600px; }
+.container .offset-by-eleven                { padding-left: 660px; }
+.container .offset-by-twelve                { padding-left: 720px; }
+.container .offset-by-thirteen              { padding-left: 780px; }
+.container .offset-by-fourteen              { padding-left: 840px; }
+.container .offset-by-fifteen               { padding-left: 900px; }
+
+
+/* Pricing Tables */
+.five-tables .pricing-table                 { width: 187px; }
+.four-tables .pricing-table                 { width: 234px; }
+.three-tables .pricing-table                { width: 312px; }
+.two-tables .pricing-table                  { width: 469px; }
+
+
+/* #Clearing
+================================================== */
+
+/* Self Clearing Goodness */
+.container:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
+
+/* Use clearfix class on parent to clear nested columns,
+or wrap each row of columns in a <div class="row"> */
+
+.clearfix:before,
+.clearfix:after,
+.row:before,
+.row:after {
+    content: '\0020';
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0; }
+.row:after,
+.clearfix:after {
+    clear: both; }
+.row,
+.clearfix {
+    zoom: 1; }
+
+/* You can also use a <br class="clear" /> to clear columns */
+.clear {
+    clear: both;
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
 }
